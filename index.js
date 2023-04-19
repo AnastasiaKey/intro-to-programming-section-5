@@ -57,7 +57,7 @@ function checkGuess() {
       if (guess < targetNumber) {
         tooLowMessage.style.display = 'block';
       } else {
-        tooHighMessage.style.display = '';
+        tooHighMessage.style.display = 'block';
       }
 
       const remainingAttempts = maxNumberOfAttempts - attempts;
@@ -98,6 +98,7 @@ function setup() {
 
   // Reset number of attempts
   maxNumberOfAttempts = 5;
+  attempts = 0;
 
   // Enable the input and submit button
   submitButton.disabled = false;
